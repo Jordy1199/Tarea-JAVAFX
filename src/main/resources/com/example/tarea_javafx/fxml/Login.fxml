@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" prefWidth="350" prefHeight="400"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tarea_javafx.LoginController"
+      style="-fx-padding: 40; -fx-background-color: #f0f0f0;">
+
+    <Label text="SISTEMA DE ACCESO" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <Label text="Usuario:"/>
+    <TextField fx:id="txtUsuario" promptText="Ingrese usuario"/>
+
+    <Label text="Contraseña:"/>
+    <PasswordField fx:id="txtContrasena" promptText="Ingrese contraseña"/>
+
+    <Label text="Rol:"/>
+    <ComboBox fx:id="cmbRol" prefWidth="270"/>
+
+    <Label fx:id="lblMensaje" style="-fx-text-fill: red;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Ingresar" prefWidth="120" onAction="#handleIngresar"
+                style="-fx-background-color: #2c3e50; -fx-text-fill: white;"/>
+        <Button text="Salir" prefWidth="120" onAction="#handleSalir"
+                style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" prefWidth="400" prefHeight="350"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tarea_javafx.AdminController"
+      style="-fx-padding: 40; -fx-background-color: #eaf4fb;">
+
+    <Label text="PANEL DE ADMINISTRADOR"
+           style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+    <Label text="Bienvenido, Administrador."
+           style="-fx-font-size: 14;"/>
+
+    <Button text="Cerrar Sesión" prefWidth="180" onAction="#handleCerrarSesion"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+
+</VBox>

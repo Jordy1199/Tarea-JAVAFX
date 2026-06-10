@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" prefWidth="400" prefHeight="350"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tarea_javafx.CajeroController"
+      style="-fx-padding: 40; -fx-background-color: #eafbea;">
+
+    <Label text="PANEL DE CAJERO"
+           style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #27ae60;"/>
+
+    <Label text="Bienvenido, Cajero."
+           style="-fx-font-size: 14;"/>
+
+    <Button text="Cerrar Sesión" prefWidth="180" onAction="#handleCerrarSesion"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+
+</VBox>
