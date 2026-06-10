@@ -15,6 +15,9 @@
     <Label text="Bienvenido, Administrador."
            style="-fx-font-size: 14;"/>
 
+    <Button text="Ir a Encuesta" prefWidth="180" onAction="#handleEncuesta"
+            style="-fx-background-color: #27ae60; -fx-text-fill: white;"/>
+
     <Button text="Cerrar Sesión" prefWidth="180" onAction="#handleCerrarSesion"
             style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
 

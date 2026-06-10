@@ -1,0 +1,54 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tarea_javafx.EncuestaController"
+      spacing="10"
+      alignment="CENTER">
+
+    <fx:define>
+        <ToggleGroup fx:id="grupo1"/>
+        <ToggleGroup fx:id="grupo2"/>
+        <ToggleGroup fx:id="grupo3"/>
+        <ToggleGroup fx:id="grupo4"/>
+    </fx:define>
+
+    <Label text="ENCUESTA DE CONOCIMIENTOS"
+           style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+    <!-- Pregunta 1 -->
+    <Label text="1. ¿Cuál es el lenguaje de programación más usado en el mundo?"
+           style="-fx-font-weight: bold;"/>
+    <RadioButton text="Java" toggleGroup="$grupo1" fx:id="r1a"/>
+    <RadioButton text="Python" toggleGroup="$grupo1" fx:id="r1b"/>
+    <RadioButton text="C++" toggleGroup="$grupo1" fx:id="r1c"/>
+
+    <!-- Pregunta 2 -->
+    <Label text="2. ¿Qué significa POO?"
+           style="-fx-font-weight: bold;"/>
+    <RadioButton text="Programación Orientada a Objetos" toggleGroup="$grupo2" fx:id="r2a"/>
+    <RadioButton text="Proceso de Operación Online" toggleGroup="$grupo2" fx:id="r2b"/>
+    <RadioButton text="Plataforma de Operaciones Optimizadas" toggleGroup="$grupo2" fx:id="r2c"/>
+
+    <!-- Pregunta 3 -->
+    <Label text="3. ¿Qué es JavaFX?"
+           style="-fx-font-weight: bold;"/>
+    <RadioButton text="Un framework para interfaces gráficas en Java" toggleGroup="$grupo3" fx:id="r3a"/>
+    <RadioButton text="Un lenguaje de programación" toggleGroup="$grupo3" fx:id="r3b"/>
+    <RadioButton text="Una base de datos" toggleGroup="$grupo3" fx:id="r3c"/>
+
+    <!-- Pregunta 4 -->
+    <Label text="4. ¿Qué archivo define la interfaz visual en JavaFX?"
+           style="-fx-font-weight: bold;"/>
+    <RadioButton text=".java" toggleGroup="$grupo4" fx:id="r4a"/>
+    <RadioButton text=".fxml" toggleGroup="$grupo4" fx:id="r4b"/>
+    <RadioButton text=".xml" toggleGroup="$grupo4" fx:id="r4c"/>
+
+    <Label fx:id="lblResultado"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Calcular Puntaje" onAction="#handleCalcular"/>
+        <Button text="Volver" onAction="#handleVolver"/>
+    </HBox>
+
+</VBox>
